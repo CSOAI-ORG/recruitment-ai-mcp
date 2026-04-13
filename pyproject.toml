@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "recruitment-ai-mcp"
+version = "1.0.0"
+description = "Hiring automation tools - job descriptions, CV scoring, interview questions, salary benchmarks, offer letters"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "MEOK AI Labs", email = "hello@meok.ai" },
+]
+keywords = ["mcp", "ai", "tools", "recruitment"]
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+recruitment-ai-mcp = "server:mcp.run"
