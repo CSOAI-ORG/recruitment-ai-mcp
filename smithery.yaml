@@ -1,0 +1,10 @@
+name: recruitment-ai-mcp
+description: "MEOK AI Labs — Hiring automation tools powered by MEOK AI Labs."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/recruitment-ai-mcp
+license: MIT
+categories: [HR, Recruitment]
+tags: [recruitment, hiring, candidate-screening, talent-acquisition, ats]
+runtime: python
+entrypoint: server.py

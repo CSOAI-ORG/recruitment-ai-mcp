@@ -1,0 +1,24 @@
+{
+  "name": "recruitment-ai-mcp",
+  "description": "MEOK AI Labs \u2014 Hiring automation tools powered by MEOK AI Labs.",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/recruitment-ai-mcp",
+  "runtime": "python",
+  "entrypoint": "server.py",
+  "tools": [
+    "generate_job_description",
+    "score_cv",
+    "generate_interview_questions",
+    "benchmark_salary",
+    "draft_offer_letter"
+  ],
+  "categories": [
+    "HR",
+    "Recruitment"
+  ],
+  "pricing": {
+    "free": "50 calls/day",
+    "pro": "$9/mo"
+  }
+}

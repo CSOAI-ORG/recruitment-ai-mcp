@@ -5,17 +5,25 @@ build-backend = "hatchling.build"
 [project]
 name = "recruitment-ai-mcp"
 version = "1.0.0"
-description = "Hiring automation tools - job descriptions, CV scoring, interview questions, salary benchmarks, offer letters"
+description = "MEOK AI Labs — Hiring automation tools powered by MEOK AI Labs."
+authors = [{name="MEOK AI Labs", email="nicholas@meok.ai"}]
 readme = "README.md"
-license = "MIT"
+license = {text = "MIT"}
 requires-python = ">=3.10"
-authors = [
-    { name = "MEOK AI Labs", email = "hello@meok.ai" },
+keywords = ["mcp", "mcp-server", "model-context-protocol", "claude", "ai-tools", "meok-ai-labs", "recruitment", "hiring", "candidate-screening", "talent-acquisition", "ats"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Developers",
 ]
-keywords = ["mcp", "ai", "tools", "recruitment"]
 dependencies = [
     "mcp>=1.0.0",
 ]
 
-[project.scripts]
-recruitment-ai-mcp = "server:mcp.run"
+[project.urls]
+Homepage = "https://meok.ai"
+Repository = "https://github.com/CSOAI-ORG/recruitment-ai-mcp"
+Documentation = "https://meok.ai/docs/recruitment-ai-mcp"
+"Bug Tracker" = "https://github.com/CSOAI-ORG/recruitment-ai-mcp/issues"
