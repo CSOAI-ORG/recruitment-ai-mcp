@@ -84,8 +84,7 @@ def generate_job_description(
     skills: list[str] | None = None,
     company_name: str = "Our Company",
     remote: bool = False,
-    key_responsibilities: list[str] | None = None,
-) -> dict:
+    key_responsibilities: list[str] | None = None) -> dict:
     """Generate a professional job description.
 
     Args:
@@ -162,8 +161,7 @@ def score_cv(
     required_skills: list[str],
     preferred_skills: list[str] | None = None,
     min_years_experience: int = 0,
-    required_education: str = "",
-) -> dict:
+    required_education: str = "") -> dict:
     """Score and analyze a CV/resume against job requirements.
 
     Args:
@@ -257,8 +255,7 @@ def generate_interview_questions(
     level: str = "mid",
     categories: list[str] | None = None,
     count: int = 10,
-    skills_to_probe: list[str] | None = None,
-) -> dict:
+    skills_to_probe: list[str] | None = None) -> dict:
     """Generate tailored interview questions for a role.
 
     Args:
@@ -322,8 +319,7 @@ def benchmark_salary(
     role: str,
     level: str = "mid",
     location: str = "uk",
-    currency: str = "GBP",
-) -> dict:
+    currency: str = "GBP") -> dict:
     """Get salary benchmarks for a role by level and location.
 
     Args:
@@ -382,8 +378,7 @@ def draft_offer_letter(
     probation_months: int = 3,
     notice_period_weeks: int = 4,
     annual_leave_days: int = 25,
-    reporting_to: str = "",
-) -> dict:
+    reporting_to: str = "") -> dict:
     """Draft a professional offer letter for a candidate.
 
     Args:
