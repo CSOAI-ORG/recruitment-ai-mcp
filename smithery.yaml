@@ -1,10 +1,116 @@
 name: recruitment-ai-mcp
-description: "MEOK AI Labs — Hiring automation tools powered by MEOK AI Labs."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/recruitment-ai-mcp
-license: MIT
-categories: [HR, Recruitment]
-tags: [recruitment, hiring, candidate-screening, talent-acquisition, ats]
-runtime: python
-entrypoint: server.py
+description: '> Hiring automation tools - job descriptions, CV scoring, interview
+  questions, salary benchmarks, offer letters'
+version: 1.0.0
+tools:
+- name: generate_job_description
+  description: Generate a professional job description.
+  parameters:
+  - name: title
+    type: string
+    required: true
+  - name: department
+    type: string
+    required: true
+  - name: level
+    type: string
+    required: false
+  - name: skills
+    type: string
+    required: false
+  - name: company_name
+    type: string
+    required: false
+  - name: remote
+    type: boolean
+    required: false
+  - name: key_responsibilities
+    type: string
+    required: false
+- name: score_cv
+  description: Score and analyze a CV/resume against job requirements.
+  parameters:
+  - name: cv_text
+    type: string
+    required: true
+  - name: required_skills
+    type: array
+    required: true
+  - name: preferred_skills
+    type: string
+    required: false
+  - name: min_years_experience
+    type: integer
+    required: false
+  - name: required_education
+    type: string
+    required: false
+- name: generate_interview_questions
+  description: Generate tailored interview questions for a role.
+  parameters:
+  - name: role
+    type: string
+    required: true
+  - name: level
+    type: string
+    required: false
+  - name: categories
+    type: string
+    required: false
+  - name: count
+    type: integer
+    required: false
+  - name: skills_to_probe
+    type: string
+    required: false
+- name: benchmark_salary
+  description: Get salary benchmarks for a role by level and location.
+  parameters:
+  - name: role
+    type: string
+    required: true
+  - name: level
+    type: string
+    required: false
+  - name: location
+    type: string
+    required: false
+  - name: currency
+    type: string
+    required: false
+- name: draft_offer_letter
+  description: Draft a professional offer letter for a candidate.
+  parameters:
+  - name: candidate_name
+    type: string
+    required: true
+  - name: role
+    type: string
+    required: true
+  - name: salary
+    type: number
+    required: true
+  - name: currency
+    type: string
+    required: false
+  - name: start_date
+    type: string
+    required: false
+  - name: company_name
+    type: string
+    required: false
+  - name: benefits
+    type: string
+    required: false
+  - name: probation_months
+    type: integer
+    required: false
+  - name: notice_period_weeks
+    type: integer
+    required: false
+  - name: annual_leave_days
+    type: integer
+    required: false
+  - name: reporting_to
+    type: string
+    required: false
