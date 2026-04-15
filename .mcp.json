@@ -1,6 +1,6 @@
 {
   "name": "recruitment-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "Recruitment Ai automation via MCP. Includes generate job description, score cv, generate interview questions. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

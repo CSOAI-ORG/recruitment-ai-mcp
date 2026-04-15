@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "recruitment-ai-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — recruitment-ai-mcp"
+description = "Recruitment Ai automation via MCP. Includes generate job description, score cv, generate interview questions. By MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]
