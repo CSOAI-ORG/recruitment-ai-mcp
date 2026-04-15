@@ -1,0 +1,56 @@
+{
+  "name": "recruitment-ai",
+  "description": "Recruitment Ai tools powered by MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/recruitment-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "generate_job_description",
+      "description": "Generate a professional job description."
+    },
+    {
+      "name": "score_cv",
+      "description": "Score and analyze a CV/resume against job requirements."
+    },
+    {
+      "name": "generate_interview_questions",
+      "description": "Generate tailored interview questions for a role."
+    },
+    {
+      "name": "benchmark_salary",
+      "description": "Get salary benchmarks for a role by level and location."
+    },
+    {
+      "name": "draft_offer_letter",
+      "description": "Draft a professional offer letter for a candidate."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
