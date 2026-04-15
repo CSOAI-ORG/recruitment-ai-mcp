@@ -1,6 +1,6 @@
 {
   "name": "recruitment-ai-mcp",
-  "description": "> Hiring automation tools - job descriptions, CV scoring, interview questions, salary benchmarks, offer letters",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
@@ -19,7 +19,7 @@
             "type": "string"
           },
           "skills": {
-            "type": "string"
+            "type": "array"
           },
           "company_name": {
             "type": "string"
@@ -28,7 +28,7 @@
             "type": "boolean"
           },
           "key_responsibilities": {
-            "type": "string"
+            "type": "array"
           }
         },
         "required": [
@@ -47,13 +47,10 @@
             "type": "string"
           },
           "required_skills": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "array"
           },
           "preferred_skills": {
-            "type": "string"
+            "type": "array"
           },
           "min_years_experience": {
             "type": "integer"
@@ -81,13 +78,13 @@
             "type": "string"
           },
           "categories": {
-            "type": "string"
+            "type": "array"
           },
           "count": {
             "type": "integer"
           },
           "skills_to_probe": {
-            "type": "string"
+            "type": "array"
           }
         },
         "required": [
@@ -144,7 +141,7 @@
             "type": "string"
           },
           "benefits": {
-            "type": "string"
+            "type": "array"
           },
           "probation_months": {
             "type": "integer"
