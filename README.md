@@ -6,40 +6,53 @@
 
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/recruitment-ai-mcp)](https://github.com/CSOAI-ORG/recruitment-ai-mcp/stargazers)
+# Recruitment Ai MCP
 
-# urecruitmentU aiU mcp
+**Recruitment AI MCP Server**
 
-**Built by **MEOK AI Labs** | [meok.ai](https://meok.ai)**
-
-[![npm version](https://img.shields.io/npm/v/@meok-ai/recruitment-ai-mcp)](https://www.npmjs.com/package/@meok-ai/recruitment-ai-mcp)
+[![PyPI](https://img.shields.io/pypi/v/meok-recruitment-ai-mcp)](https://pypi.org/project/meok-recruitment-ai-mcp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
-
-[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/recruitment-ai-mcp/issues)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-MCP_Server-purple)](https://meok.ai)
 
 </div>
 
----
+## Overview
+
+Recruitment AI MCP Server
+Hiring automation tools powered by MEOK AI Labs.
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `generate_job_description` | Generate a professional job description. |
+| `score_cv` | Score and analyze a CV/resume against job requirements. |
+| `generate_interview_questions` | Generate tailored interview questions for a role. |
+| `benchmark_salary` | Get salary benchmarks for a role by level and location. |
+| `draft_offer_letter` | Draft a professional offer letter for a candidate. |
 
 ## Installation
 
 ```bash
-pip install recruitment-ai-mcp
-# or
-npm install -g @meok-ai/recruitment-ai-mcp
+pip install meok-recruitment-ai-mcp
 ```
 
-## Quick Start
+## Usage with Claude Desktop
 
-See the project repository for full documentation and examples.
+Add to your Claude Desktop MCP config:
 
-## Enterprise Support
-
-- 📧 nicholas@csoai.org
-- 🌐 [CSOAI.org](https://csoai.org)
+```json
+{
+  "mcpServers": {
+    "recruitment-ai": {
+      "command": "python",
+      "args": ["-m", "meok_recruitment_ai_mcp.server"]
+    }
+  }
+}
+```
 
 ## License
 
-MIT © [CSOAI](https://csoai.org)
+MIT © [MEOK AI Labs](https://meok.ai)
 <!-- mcp-name: io.github.CSOAI-ORG/recruitment-ai-mcp -->
