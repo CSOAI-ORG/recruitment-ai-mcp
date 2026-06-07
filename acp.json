@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "recruitment-ai-mcp",
+    "description": "Recruitment Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "recruitment-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "generate_job_description",
+      "score_cv",
+      "generate_interview_questions",
+      "benchmark_salary",
+      "draft_offer_letter"
+    ]
+  }
+}
