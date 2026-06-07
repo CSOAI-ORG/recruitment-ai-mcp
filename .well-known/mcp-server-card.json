@@ -1,0 +1,28 @@
+{
+  "name": "recruitment-ai-mcp",
+  "title": "Recruitment Ai Mcp",
+  "description": "Recruitment Ai automation via MCP. Includes generate job description, score cv, generate interview questions. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "generate_job_description"
+    },
+    {
+      "name": "score_cv"
+    },
+    {
+      "name": "generate_interview_questions"
+    },
+    {
+      "name": "benchmark_salary"
+    },
+    {
+      "name": "draft_offer_letter"
+    }
+  ]
+}
