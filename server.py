@@ -1,4 +1,6 @@
 """
+Buy Pro: https://www.csoai.org/checkout
+
 Recruitment AI MCP Server
 Hiring automation tools powered by MEOK AI Labs.
 """
